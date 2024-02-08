@@ -1,0 +1,89 @@
+/* Import Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+.current-weather img {
+  max-width: 120px;
+  margin-top: -15px;
+}
+
+.homeImage {
+  max-width: 400px;
+}
+
+.forecast-wrap {
+  text-wrap: pretty;
+}
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+ gmp-map {
+  height: 50%;
+}
+
+.custom-height {
+height: 350px !important;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ /* FOOTER */
+
+
+ #searchHistoryContainer{
+  margin-top: 20px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure the body takes at least the height of the viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+
+main {
+  flex: 1; /* Allow main content to expand to fill remaining space */
+}
+
+
+footer {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 30px;
+padding: 30px 0;
+display: flex;
+justify-content: center; /* Center content horizontally */
+align-items: center; /* Center content vertically */
+
+}
+
+
+#footer-text {
+text-align: center;
+color: white;
+padding: 20px 0;
+width: 100vw;
+display: flex;
+justify-content: space-evenly;
+
+}
+#footer-text a {
+text-decoration: none;
+color: white;
+}
+#footer-text a:hover {
+color: yellow;
+transition: color 0.75s;
+}
+
+ 
+
