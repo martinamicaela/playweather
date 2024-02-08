@@ -8,7 +8,7 @@ const userLocationButton = document.querySelector("#userlocation-btn");
 const currentWeatherDiv = document.querySelector(".current-weather");
 const daysForecastDiv = document.querySelector(".days-forecast");
 var searchHistoryDiv = document.getElementById("searchHistory");
-const API_KEY = "045a0084a08118b8ad2136beb78579bf"; //Ellis' API KEY use for TESTING ONLY
+const API_KEY = "2e8632aaf4cafb36fca28129a00dbda7"; //Ellis' API KEY use for TESTING ONLY
 
 
 
