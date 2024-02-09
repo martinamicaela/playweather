@@ -37,7 +37,7 @@ const createWeatherCard = (cityName, weatherItem, index) => {
                         <div class="card-body p-3 text-white">
                             <h5 class="card-title fw-semibold text-center">(${dateText})</h5>
                             <h6 class="card-text text-center">${description}</h6>
-                            <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}.png" class="rounded mx-auto d-block" alt="weather icon">
+                            <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@4x.png" class="rounded mx-auto d-block" alt="weather icon">
                         </div>
                         <div class="card-body p-3 text-white"> 
                             <h6 class="card-text my-3 mt-3 text-center">Temp: ${((weatherItem.main.temp - 273.15).toFixed(2))}°C</h6>

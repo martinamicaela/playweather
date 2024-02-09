@@ -3,11 +3,37 @@
 * {
   font-family: 'Open Sans', sans-serif;
 }
+
+:root {
+  /* ===== Custom Colors ===== */
+  --clr-black: #040D12;
+  --clr-brown: #A27B5C;
+  --clr-lightgreen: #5c8374;
+  --clr-grey: #93b1a6;
+  /* ===== Custom Colors ===== */
+}
+
+.bgc-black {
+  background-color: var(--clr-black);
+}
+
+.bgc-dg,.btn:hover {
+  background-color: var(--clr-brown);
+}
+
+.bgc-lg {
+  background-color: var(--clr-lightgreen);
+}
+
+.bgc-grey  {
+  background-color: var(--clr-grey);
+}
+
 .current-weather img {
   max-width: 120px;
   margin-top: -15px;
 }
-
+aa
 .homeImage {
   max-width: 400px;
 }
@@ -23,7 +49,7 @@
 
 .custom-height {
 height: 350px !important;
-}
+} 
 
 /* Optional: Makes the sample page fill the window. */
 html,
@@ -35,10 +61,10 @@ body {
 
  /* FOOTER */
 
-
  #searchHistoryContainer{
   margin-top: 20px;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -74,16 +100,16 @@ padding: 20px 0;
 width: 100vw;
 display: flex;
 justify-content: space-evenly;
-
 }
+
 #footer-text a {
 text-decoration: none;
 color: white;
 }
+
 #footer-text a:hover {
 color: yellow;
 transition: color 0.75s;
 }
 
  
-

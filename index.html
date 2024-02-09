@@ -29,120 +29,120 @@
         </script>    
   </head>
   <body> 
-        <!-- MAIN HEADER -->
-    <header class="bg-success text-center py-3">
-      <h1 class="fw-bold h3 text-white my-1">Weather Dashboard</h1>
-    </header>
-        <!-- MAIN CONTENT -->
-        <main>
-    <div class="container-fluid my-4 weather-data">
-      <div class="row">
-        <div class="col-xxl-3 col-md-4 px-lg-4">
-          <h5 class="fw-bold text-center">Enter a City Name</h5>
-          <input type="text" id="city-input" class="py-2 form-control" placeholder="E.g., New York, London, Tokyo">
-          <button id="search-btn" class="btn btn-success py-2 w-100 mt-3 mb-2">Search</button>
-          <div class="separator"></div>
-          <button id="userlocation-btn" class="btn btn-success py-2 w-100 mt-3 mb-2">Use Current Location</button>
-          
+    <!-- MAIN HEADER -->
+<header class="bg-dark text-center py-3">
+  <h1 class="fw-bold h3 text-white my-1">Weather Dashboard</h1>
+</header>
+    <!-- MAIN CONTENT -->
+    <main>
+<div class="container-fluid my-4 weather-data">
+  <div class="row">
+    <div class="col-xxl-3 col-md-4 px-lg-4">
+      <h5 class="fw-bold text-center">Enter a City Name</h5>
+      <input type="text" id="city-input" class="py-2 form-control" placeholder="E.g., New York, London, Tokyo">
+      <button id="search-btn" class="btn bgc-dg py-2 w-100 mt-3 mb-2">Search</button>
+      <div class="separator"></div>
+      <button id="userlocation-btn" class="btn bgc-dg py-2 w-100 mt-3 mb-2">Use Current Location</button>
+      
 
-        </div>   
-        <div class="col-xxl-9 col-md-8 mt-md-1 mt-4 pe-lg-4 text-center" id="homePage">
-          <h1 class="mt-4">Welcome To Our Weather App</h1>
-          <h2>Please enter a City name in the search bar or click the "Use Current Location" button to receive the current weather and a five day forecast</h2>
-          <div class="mt-5"><img class="homeImage" src="assets/images/home/Four_Seasons.jpg" alt=""></div>
-        </div>        
-        <div class="col-xxl-9 col-md-8 mt-md-1 mt-4 pe-lg-4 d-none" id="weatherSection">
-          <div class="current-weather bg-success text-white py-2 px-4 rounded-3">
-            <div class="mt-3 d-flex justify-content-between">
-              <div>
-                <h3 class="fw-bold">_______ ( ______ )</h3>
-                <h6 class="my-3 mt-3">Temperature: __°C</h6>
-                <h6 class="my-3">Wind: __ M/S</h6>
-                <h6 class="my-3">Humidity: __%</h6>
-              </div>
+    </div>   
+    <div class="col-xxl-9 col-md-8 mt-md-1 mt-4 pe-lg-4 text-center" id="homePage">
+      <h1 class="mt-4">Welcome To Our Weather App</h1>
+      <h2>Please enter a City name in the search bar or click the "Use Current Location" button to receive the current weather and a five day forecast</h2>
+      <div class="mt-5"><img class="homeImage" src="assets/images/home/Four_Seasons.jpg" alt=""></div>
+    </div>        
+    <div class="col-xxl-9 col-md-8 mt-md-1 mt-4 pe-lg-4 d-none" id="weatherSection">
+      <div class="current-weather bgc-grey text-white py-2 px-4 rounded-3">
+        <div class="mt-3 d-flex justify-content-between">
+          <div>
+            <h3 class="fw-bold">_______ ( ______ )</h3>
+            <h6 class="my-3 mt-3">Temperature: __°C</h6>
+            <h6 class="my-3">Wind: __ M/S</h6>
+            <h6 class="my-3">Humidity: __%</h6>
           </div>
+      </div>
+      </div>
+    </div>
+    <div class="d-none" id="weatherSection2">
+      <h4 class="fw-bold my-4 text-center">5-Day Forecast</h4>
+      <div class="days-forecast row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 justify-content-between">
+        <div class="col mb-3">
+          <div class="card border-0 bgc-grey text-white">
+            <div class="card-body p-3 text-white">
+              <h5 class="card-title fw-semibold">( ______ )</h5>
+              <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+              <h6 class="card-text my-3">Wind: __ M/S</h6>
+              <h6 class="card-text my-3">Humidity: __%</h6>
+            </div>
           </div>
         </div>
-        <div class="d-none" id="weatherSection2">
-          <h4 class="fw-bold my-4 text-center">5-Day Forecast</h4>
-          <div class="days-forecast row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-5 justify-content-between">
-            <div class="col mb-3">
-              <div class="card border-0 bg-secondary text-white">
-                <div class="card-body p-3 text-white">
-                  <h5 class="card-title fw-semibold">( ______ )</h5>
-                  <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
-                  <h6 class="card-text my-3">Wind: __ M/S</h6>
-                  <h6 class="card-text my-3">Humidity: __%</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card border-0 bg-secondary text-white">
-                <div class="card-body p-3 text-white">
-                  <h5 class="card-title fw-semibold">( ______ )</h5>
-                  <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
-                  <h6 class="card-text my-3">Wind: __ M/S</h6>
-                  <h6 class="card-text my-3">Humidity: __%</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card border-0 bg-secondary text-white">
-                <div class="card-body p-3 text-white">
-                  <h5 class="card-title fw-semibold">( ______ )</h5>
-                  <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
-                  <h6 class="card-text my-3">Wind: __ M/S</h6>
-                  <h6 class="card-text my-3">Humidity: __%</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-3">
-              <div class="card border-0 bg-secondary text-white">
-                <div class="card-body p-3 text-white">
-                  <h5 class="card-title fw-semibold">( ______ )</h5>
-                  <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
-                  <h6 class="card-text my-3">Wind: __ M/S</h6>
-                  <h6 class="card-text my-3">Humidity: __%</h6>
-                </div>
-              </div>
-            </div>            
-          </div>          
-        </div>
-        <!--Previous History List -->
-        <div class="container-fluid weather-data d-none" id="searchHistoryContainer">
-          <div class="row pt-4 pb-4">
-            <div class="col-xxl-3">
-              <div>
-                <h5 class="fw-bold card border-0 bg-success text-center text-white">Previous searches</h5>
-              </div>
-              <div id="searchHistory" class="container mt-4">
-                <ul id="searchList" class="list-unstyled list-group">
-                </ul>
-              </div>
-            </div>
-            <!-- Map -->
-            <div class="col-xxl-9 pt-4 d-flex justify-content-center align-items-stretch custom-height" id="map">
-
+        <div class="col mb-3">
+          <div class="card border-0 bgc-grey text-white">
+            <div class="card-body p-3 text-white">
+              <h5 class="card-title fw-semibold">( ______ )</h5>
+              <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+              <h6 class="card-text my-3">Wind: __ M/S</h6>
+              <h6 class="card-text my-3">Humidity: __%</h6>
             </div>
           </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card border-0 bgc-grey text-white">
+            <div class="card-body p-3 text-white">
+              <h5 class="card-title fw-semibold">( ______ )</h5>
+              <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+              <h6 class="card-text my-3">Wind: __ M/S</h6>
+              <h6 class="card-text my-3">Humidity: __%</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-3">
+          <div class="card border-0 bgc-grey text-white">
+            <div class="card-body p-3 text-white">
+              <h5 class="card-title fw-semibold">( ______ )</h5>
+              <h6 class="card-text my-3 mt-3">Temp: __°C</h6>
+              <h6 class="card-text my-3">Wind: __ M/S</h6>
+              <h6 class="card-text my-3">Humidity: __%</h6>
+            </div>
+          </div>
+        </div>            
+      </div>          
+    </div>
+    <!--Previous History List -->
+    <div class="container-fluid weather-data d-none" id="searchHistoryContainer">
+      <div class="row pt-4 pb-4">
+        <div class="col-xxl-3">
+          <div>
+            <h5 class="fw-bold card border-0 text-center">Previous searches</h5>
+          </div>
+          <div id="searchHistory" class="container mt-4">
+            <ul id="searchList" class="list-unstyled list-group">
+            </ul>
+          </div>
+        </div>
+        <!-- Map -->
+        <div class="col-xxl-9 pt-4 d-flex justify-content-center align-items-stretch custom-height" id="map">
+
         </div>
       </div>
     </div>
-  </main> 
+  </div>
+</div>
+</main> 
 
-  <!-- FOOTER -->
-     <footer >
-      <div class="row">
-      <div id="footer-text" class="container fixed-bottom bg-success">
-          <a href="https://github.com/martinamicaela" target="_blank" ><i class="fa-brands fa-github"></i>
-              Martina</a>
-          <a href="https://github.com/Quaim" target="_blank"><i class="fa-brands fa-github"></i> Ellis</a>
-          <a href="https://github.com/joshwrightci" target="_blank"><i class="fa-brands fa-github"></i> Josh</a>
-          <a href="https://github.com/Karlsberg62/Karlsberg62" target="_blank"><i class="fa-brands fa-github"></i> Karlos</a>      
-     </div>
-    </div>
-  </footer>
+<!-- FOOTER -->
+ <footer >
+  <div class="row">
+  <div id="footer-text" class="container fixed-bottom bg-dark">
+      <a href="https://github.com/martinamicaela" target="_blank" ><i class="fa-brands fa-github"></i>
+          Martina</a>
+      <a href="https://github.com/Quaim" target="_blank"><i class="fa-brands fa-github"></i> Ellis</a>
+      <a href="https://github.com/joshwrightci" target="_blank"><i class="fa-brands fa-github"></i> Josh</a>
+      <a href="https://github.com/Karlsberg62/Karlsberg62" target="_blank"><i class="fa-brands fa-github"></i> Karlos</a>      
+ </div>
+</div>
+</footer>
 
-    
-  </body>
+
+</body>
 </html>
